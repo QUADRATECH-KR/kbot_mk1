@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<robot name="kbot_rover" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+    <!-- CHASSIS -->
+    
+    <joint name="chassis_joint" type="fixed">
+        <parent link="base_link"/>
+        <child  link="chassis"/>
+        <origin xyz="0.12 0 0.099"/>
+    </joint>
+
+    <link name="chassis">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+              <!-- <box size="0.30 0.24 0.11"/> -->
+              <mesh filename="file://$(find kbot)/meshes/chassis_LP.stl"/>
+            </geometry>
+           <material name="teal"/>
+        </visual>
+
+        <collision>
+            <geometry>
+               <box size="0.30 0.24 0.11"/>
+            </geometry>
+        </collision>
+        
+        <xacro:inertial_box mass="3.2" x="0.3" y="0.24" z="0.11">
+            <origin xyz="0.12 0 0.04"/>
+        </xacro:inertial_box>
+    </link>
+
+
+    <!-- LEFT Rear WHEELS -->
+
+    <joint name="left_wheel_r_joint" type="continuous">
+       <parent link="base_link"/>
+       <child link="left_wheel_r"/>
+       <origin xyz="-0.005 0.165 0.062" rpy="-1.5708 0 0"/>
+       <axis   xyz="0 0 1"/>
+    </joint>
+
+    <link name="left_wheel_r">
+       <visual>
+          <!--<origin xyz="0.0 0.0 0.0" rpy="${pi/2} 0.0 0.0"/>-->
+          <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+          <geometry>
+              <!-- <cylinder radius="0.06" length="0.06"/> -->
+              <!-- <mesh filename="file://$(find kbot)/meshes/wheel_L_LP.stl"/> -->
+              <mesh filename="file://$(find kbot)/meshes/wheel_L_LP.stl" scale="1 1 1"/>
+              
+          </geometry>
+          <material name="grey"/>
+       </visual>
+
+       <collision>
+          <geometry>
+              <cylinder radius="0.06" length="0.06"/>
+          </geometry>
+       </collision>
+    </link>
+
+
+    <!-- Right Rear WHEELS -->
+
+    <joint name="right_wheel_r_joint" type="continuous">
+       <parent link="base_link"/>
+       <child link="right_wheel_r"/>
+       <origin xyz="-0.005 -0.165 0.062" rpy="-1.5708 0 0"/>
+       <axis   xyz="0 0 1"/>
+    </joint>
+
+    <link name="right_wheel_r">
+       <visual>
+          <geometry>
+              <mesh filename="file://$(find kbot)/meshes/wheel_R_LP.stl" scale="1 1 1"/>
+          </geometry>
+          <material name="grey"/>
+       </visual>
+
+       <collision>
+          <geometry>
+              <cylinder radius="0.06" length="0.06"/>
+          </geometry>
+       </collision>
+    </link>
+
+    <!-- LEFT Front WHEELS -->
+
+    <joint name="left_wheel_f_joint" type="continuous">
+       <parent link="base_link"/>
+       <child link="left_wheel_f"/>
+       <origin xyz="0.245 0.165 0.062" rpy="-1.5708 0 0"/>
+       <axis   xyz="0 0 1"/>
+    </joint>
+
+    <link name="left_wheel_f">
+       <visual>
+          <geometry>
+              <mesh filename="file://$(find kbot)/meshes/wheel_L_LP.stl" scale="1 1 1"/>
+          </geometry>
+          <material name="grey"/>
+       </visual>
+
+       <collision>
+          <geometry>
+              <cylinder radius="0.06" length="0.06"/>
+          </geometry>
+       </collision>
+    </link>
+
+
+    <!-- Right Front WHEELS -->
+
+    <joint name="right_wheel_f_joint" type="continuous">
+       <parent link="base_link"/>
+       <child link="right_wheel_f"/>
+       <origin xyz="0.245 -0.165 0.062" rpy="-1.5708 0 0"/>
+       <axis   xyz="0 0 1"/>
+    </joint>
+
+    <link name="right_wheel_f">
+       <visual>
+          <geometry>
+              <mesh filename="file://$(find kbot)/meshes/wheel_R_LP.stl" scale="1 1 1"/>
+          </geometry>
+          <material name="grey"/>
+       </visual>
+
+       <collision>
+          <geometry>
+              <cylinder radius="0.06" length="0.06"/>
+          </geometry>
+       </collision>
+    </link>  
+
+
+</robot>
+
+
