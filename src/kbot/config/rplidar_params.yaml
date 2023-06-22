@@ -3,4 +3,4 @@ rplidar_composition:
     serial_port: "/dev/ttyUSB0"
     frame_id: "laser_frame"
     angle_compensate: true
-    scan_mode: "Standard"
+    scan_mode: "Boost"  #Standard
