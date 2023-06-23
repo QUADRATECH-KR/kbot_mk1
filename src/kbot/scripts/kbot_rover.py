@@ -243,9 +243,9 @@ class KBOT_ROVER_IX(Node):
         Vr = (right_wheel_w * 2 * pi * self.wheel_radius) / 360  #wheel radius 0.06m
         Vl = (left_wheel_w  * 2 * pi * self.wheel_radius) / 360
 
-        vx =  (Vr + Vl) / 2         #
-        vy =  0.0                   #0 since this is a Diif Drive Robot
-        vth = (Vr - Vl) / 0.24      #0.24m distance between 2 wheels
+        vx =  (Vr + Vl) / 2            #
+        vy =  0.0                      #0 since this is a Diif Drive Robot
+        vth = (Vr - Vl) / (2 * 0.26)   #0.26m distance between 2 wheels
 
         # compute odometry in a typical way given the velocities of the robot
         #dt = (current_time - last_time).to_sec()
