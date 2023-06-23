@@ -1,2 +1,3 @@
 # KBOT ROS PACKAGE
-<p align="center"><img src="https://github.com/QUADRATECH-KR/KBOT/assets/136983736/f2e890d2-187f-4995-a2db-e1b656a21daa" width="500px" /></p>
+
+<p align="center"><img src="https://github.com/QUADRATECH-KR/kbot_mk1/assets/136983736/8b1aa463-c3b3-4853-9d7d-2207f7b58ca9" width="500px" /></p>
