@@ -37,32 +37,6 @@ entry_count = 0
 
 
 
-def quaternion_from_euler(ai, aj, ak):
-    ai /= 2.0
-    aj /= 2.0
-    ak /= 2.0
-    ci = math.cos(ai)
-    si = math.sin(ai)
-    cj = math.cos(aj)
-    sj = math.sin(aj)
-    ck = math.cos(ak)
-    sk = math.sin(ak)
-    cc = ci*ck
-    cs = ci*sk
-    sc = si*ck
-    ss = si*sk
-
-    q = np.empty((4, ))
-    q[0] = cj*sc - sj*cs
-    q[1] = cj*ss + sj*cc
-    q[2] = cj*cs - sj*sc
-    q[3] = cj*cc + sj*ss
-
-    return q
-
-
-
-
 def send_cmd_ix(right_w, left_w):
 
     tcflush(sys.stdin, TCIFLUSH)
@@ -163,46 +137,7 @@ def read_data_ix():
     return (right_wheel_w, left_wheel_w)
 
 
-"""
-class KBOT_pub(Node):
-    str_ = ''
-    i_   =  0
-    duration   = 0.2
-
-    def __init__(self):
-        super().__init__('kbot_pub')
-        print("AAAAAAAAAAA")
-        self.pub   = self.create_publisher(Odometry, 'odom', 2)
-        #self.timer = self.create_timer(self.duration, self.publish)
-        print("Waiting For Input")
-        #keyboard.hook(self.publish)
-
-    #def publish(self, key_press_event):
-    def publish(self):
-        key_ = 0
-        if(keyboard.is_pressed(103)):
-            key_ = 103
-        elif(keyboard.is_pressed(108)):
-            key_ = 108
-        elif(keyboard.is_pressed(106)):
-            key_ = 106
-        elif(keyboard.is_pressed(105)):
-            key_ = 105
-        else:
-            key_ = 0
-        
-        msg     = KBot()
-        #msg.key = str(key_press_event.scan_code)
-        msg.key = str(key_)
-        msg.throttle = self.i_
-        self.pub.publish(msg)
-        self.get_logger().info("Publishing key : %s" %msg.key)
-        self.get_logger().info("Publishing throttle : %d" %msg.throttle)
-
-"""
-
-        
-    
+       
 
 
 class KBOT_ROVER_IX(Node):
