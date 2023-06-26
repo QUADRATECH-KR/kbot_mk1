@@ -1,0 +1,3 @@
+map_server:
+  ros__parameters:
+      yaml_filename: 'map.yaml' #"/home/linux-dev/Desktop/FINAL WITH NAV/kbot_mk1/map.yaml1"
