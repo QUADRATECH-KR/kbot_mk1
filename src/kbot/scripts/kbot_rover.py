@@ -55,16 +55,17 @@ def send_cmd_ix(right_w, left_w):
             ser = serial.Serial(port, baud_rate, timeout = 0.15, write_timeout = 0.25)
         
         try:
-            if(entry_count >= 4000 and right_w == 0 and left_w == 0):
+            if(entry_count >= 1000 and right_w == 0 and left_w == 0):
                 cmd_ = "-S\n"
-            ser.write(cmd_.encode('utf-8'))
+            #ser.write(cmd_.encode('utf-8'))
             #ser.reset_input_buffer()
             #dummy = ser.read(1)
             read_data_ix()
-            dummy = ser.read(100)
+            ser.write(cmd_.encode('utf-8'))
+            #dummy = ser.read(100)
             #dummy = ser.read(10000000)
-            ser.reset_output_buffer()
-            ser.cancel_write()
+            #ser.reset_output_buffer()
+            #ser.cancel_write()
             
             
         except Exception as e:
@@ -97,10 +98,10 @@ def read_data_ix():
 
 
     try:
-            #str_ = ser.read(ser.in_waiting)
-            str_ = ser.read(100)
+            str_ = ser.read(ser.in_waiting)
+            #str_ = ser.read(100)
             #str_ = ser.read_all()
-            ser.cancel_read()
+            #ser.cancel_read()
             ser.reset_input_buffer()
             ser.reset_output_buffer()
             if(str_):
