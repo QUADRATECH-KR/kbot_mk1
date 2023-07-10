@@ -137,7 +137,7 @@ class KBOT_ROVER_IX(Node):
     right_dps = 0
     right_dps = 0
 
-    odom_publish_rate = 0.0000015
+    odom_publish_rate = 0.04
 
     x  = 0.0
     y  = 0.0
