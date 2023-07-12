@@ -21,7 +21,8 @@ def generate_launch_description():
                        
     amcl_node       = Node(
                         package='nav2_amcl',
-                        executable='amcl'
+                        executable='amcl',
+                        parameters=[params_slam_localization]
                        )                
 
     
