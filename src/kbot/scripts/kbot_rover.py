@@ -20,6 +20,19 @@ import math
 from math import cos, sin, pi
 import numpy as np
 
+import imu_ix as imu_
+import send_ix as tx_
+
+imu_.sample_time_ = 0.0083
+imu_.sample_rate_ = 1 / imu_.sample_time_
+
+imu_.mag_bias  = [0.061798095703125, 0.10134887695312494, 0.1717987060546875]
+imu_.gyro_bias = [0.014114753777375467, 0.010852381442038685, -0.00665790272517]
+
+imu_.i2c_bus_init()
+
+imu_.imu_init()
+
 
 ser       = ''
 port      = ''
@@ -146,6 +159,8 @@ class KBOT_ROVER_IX(Node):
     wheel_right_pos = 0
     wheel_left_pos  = 0
 
+    imu_data = [0.0, 0.0, 0.0]
+
     def calc_odom(self):
         global right_wheel_w
         global left_wheel_w
@@ -173,7 +188,9 @@ class KBOT_ROVER_IX(Node):
 
         self.x += delta_x
         self.y += delta_y
-        self.th += delta_th
+        self.th_ += delta_th   # Angle From Odom
+        print("ANGLE : ", int(self.imu_data[2]))
+        self.th = -1 * int(self.imu_data[2]) * pi / 180  # Angle From IMU
 
         #create odom
         odom = Odometry()
@@ -195,7 +212,7 @@ class KBOT_ROVER_IX(Node):
         #setting up twist (linear / angular) velocity
         odom.twist.twist.linear.x  = vx
         odom.twist.twist.linear.y  = vy
-        odom.twist.twist.angular.z = vth
+        odom.twist.twist.angular.z = vth #vth : Angular Rate From Odom
 
         #publish odom
         self.pub.publish(odom)
@@ -273,10 +290,14 @@ class KBOT_ROVER_IX(Node):
         thread_ = Thread(target = self.create_timer, args=(self.odom_publish_rate, self.calc_odom,))
         thread_.start()
 
+        thread_imu = Thread(target = self.create_timer, args=(self.duration_imu, self.imu_read_,))
+        thread_imu.start()
+
         self.sub
         
         self.timer = self.create_timer(self.duration_sub, self.timer_callback)
         thread_.join()
+        thread_imu.join()
 
     
 def main(args = None):
