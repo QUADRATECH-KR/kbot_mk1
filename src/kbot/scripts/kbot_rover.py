@@ -139,6 +139,7 @@ class KBOT_ROVER_IX(Node):
     str_ = ''
     i_   =  0
     duration_sub = 0.000001
+    duration_imu = 0.000005
 
     left_wheel_bias  = 1
     right_wheel_bias = 1
