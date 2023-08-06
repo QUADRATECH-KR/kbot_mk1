@@ -273,6 +273,11 @@ class KBOT_ROVER_IX(Node):
         #send_cmd_ix(0, 0)
         
 
+    def imu_read_(self):
+        self.imu_data = imu_.imu_fusion_()
+        #print(self.imu_data)
+        print("\033[92m {}\033[00m".format(self.imu_data[2]))
+
 
     def __init__(self):
         super().__init__('kbot_rover_ix')
