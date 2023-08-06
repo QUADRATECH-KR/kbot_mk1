@@ -153,9 +153,10 @@ class KBOT_ROVER_IX(Node):
 
     odom_publish_rate = 0.04
 
-    x  = 0.0
-    y  = 0.0
-    th = 0.0
+    x   = 0.0
+    y   = 0.0
+    th  = 0.0
+    th_ = 0.0
 
     wheel_right_pos = 0
     wheel_left_pos  = 0
@@ -271,7 +272,7 @@ class KBOT_ROVER_IX(Node):
         tcflush(sys.stdin, TCIFLUSH)
         send_cmd_ix(self.right_wheel_deg_ps, self.left_wheel_deg_ps)
         #send_cmd_ix(0, 0)
-        
+
 
     def imu_read_(self):
         self.imu_data = imu_.imu_fusion_()
