@@ -28,6 +28,8 @@ import time
 port_ = 'COM12'
 baud_ = 250000
 
+rx_.IP = IP   = '192.168.1.36'  #Raspberry Pi IP
+
 #ser = serial.Serial(port_, baud_, timeout=0.01, write_timeout = 0.01)#, parity=serial.PARITY_EVEN, rtscts=1)
 
 
@@ -69,54 +71,11 @@ accel_acc = [0.0, 0.0, 0.0]
 acc_count = 0
 dw        = [1, 1, 1]
 
-sample_rate_ = int(1 / 0.005)
-sample_time_ = 0.005
+sample_time_ = 0.0083
+sample_rate_ = int(1 / sample_time_)
+
 
 mat_ = numpy.zeros((3,3))
-
-
-"""
-def test_madgwick(accel_, gyro_, mag_):
-    from skinematics import imus, quat, vector, rotmat
-    from skinematics.sensors.manual import MyOwnSensor
-
-    ## Get data
-    #imu = self.imu_signals
-    in_data = {
-        "rate": imu["rate"],
-        "acc": imu["gia"],
-        "omega": imu["omega"],
-        "mag": imu["magnetic"],
-    }
-
-    my_sensor = MyOwnSensor(
-        in_file="Simulated sensor-data",
-        in_data=in_data,
-        R_init=quat.convert(self.q_init, to="rotmat"),
-        pos_init=self.pos_init,
-        q_type="madgwick",
-    )
-
-    # and then check, if the quat_vector = [0, sin(45), 0]
-    q_madgwick = my_sensor.quat
-
-    result = quat.q_vector(q_madgwick[-1])
-    correct = array([0.0, np.sin(np.deg2rad(45)), 0.0])
-    error = norm(result - correct)
-
-    # self.assertAlmostEqual(error, 0)
-    self.assertTrue(error < 1e-3)
-
-    ##inFile = os.path.join(myPath, 'data', 'data_xsens.txt')
-    ##from skinematics.sensors.xsens import XSens
-
-    ##initialPosition = array([0,0,0])
-    ##R_initialOrientation = rotmat.R(0,90)
-
-    ##sensor = XSens(in_file=inFile, R_init = R_initialOrientation, pos_init = initialPosition, q_type='madgwick')
-    ##q = sensor.quat
-"""
-
 
 
 def kill_():
@@ -149,9 +108,9 @@ def mag_plot_():
     ax.cla()
 
     # Display the sub-plots
-    ax.scatter(mag_history_X, mag_history_Y, color='r')
-    ax.scatter(mag_history_Y, mag_history_Z, color='g')
-    ax.scatter(mag_history_Z, mag_history_X, color='b')
+    ax.scatter(mag_history_X, mag_history_Y, color='r', alpha=0.7)
+    ax.scatter(mag_history_Y, mag_history_Z, color='g', alpha=0.7)
+    ax.scatter(mag_history_Z, mag_history_X, color='b', alpha=0.7)
 
     ax.title.set_text("MAGNETOMETER")
     ax.set(ylabel="Tesla")
@@ -170,9 +129,9 @@ def gyro_plot_():
     ax.cla()
 
     # Display the sub-plots
-    ax.plot(time_, gyro_history_X, color='r')
-    ax.plot(time_, gyro_history_Y, color='g')
-    ax.plot(time_, gyro_history_Z, color='b')
+    ax.plot(time_, gyro_history_X, color='r', alpha=0.7)
+    ax.plot(time_, gyro_history_Y, color='g', alpha=0.7)
+    ax.plot(time_, gyro_history_Z, color='b', alpha=0.7)
 
     ax.title.set_text("GYROSCOPE")
     ax.set(ylabel="rad/s")
@@ -286,9 +245,9 @@ yaw_  = 0
 def imu_fusion(accel_raw, gyro_raw, mag_raw):
     global acc_count, time_, gyro_acc, gyro_acc_count, dw, ahrs, accel_ned, gyro_ned, sample_time_, x_dps, yaw_, mat_
 
-    mag_bias  = [0.0, -0.0060, 0.0]  #[x, y, z] Magnetometer calibration bias
+    mag_bias  = [-0.1297760009765625, -0.343597412109375, 0.4165191650390625]  #[x, y, z] Magnetometer calibration bias
     #gyro_bias = [0.81, 0.60, -0.32]  #[x, y, z] Gyroscope calibration bias
-    gyro_bias = [0.014114753777375467, 0.010852381442038685, -0.006657902725177109]  #[x, y, z] Gyroscope calibration bias
+    gyro_bias = [0.0718248, -0.013848437668412037, 0.024833977164988898]  #[x, y, z] Gyroscope calibration bias
 
     accel_range = 2.0   # Measurement Scale in +/- 2 g
     gyro_range  = 250   # Measurement Scale in +/- 250 deg/s
@@ -303,15 +262,13 @@ def imu_fusion(accel_raw, gyro_raw, mag_raw):
     #mag_   = [((x  * mag_range) /  32768) for x in mag_raw]                              # Measurement in Gauss
     mag_   = [((x * mag_range * 10)  / (32768)) for x in mag_raw]                         # Measurement in uT (micro Tesla)
 
-    #mag_[0]  += mag_bias[0]
-    #mag_[1]  += mag_bias[1]
-    #mag_[2]  += mag_bias[2]
+
 
 
     ## CALIBRATION OFFSETS
-    mag_[0]  += 0.061798095703125
-    mag_[1]  +=  0.10134887695312494
-    mag_[2]  += 0.1717987060546875
+    mag_[0]  += mag_bias[0]
+    mag_[1]  += mag_bias[1]
+    mag_[2]  += mag_bias[2]
 
     gyro_[0] += gyro_bias[0]
     gyro_[1] += gyro_bias[1]
@@ -357,7 +314,7 @@ def imu_fusion(accel_raw, gyro_raw, mag_raw):
 
 
     #ahrs.update_no_magnetometer(numpy.array(gyro_), numpy.array(accel_), 0.006)             #(gyro_, accel_, sample_rate)
-    ahrs.update(numpy.array(gyro_ned), numpy.array(accel_ned), numpy.array(mag_), 0.006)#104)          #(gyro, accel, mag, dt)
+    ahrs.update(numpy.array(gyro_ned), numpy.array(accel_ned), numpy.array(mag_), sample_time_)#0.006)#104)          #(gyro, accel, mag, dt)
 
     quat  = ahrs.quaternion
     euler = quat.to_euler()
@@ -547,14 +504,13 @@ def processed_viz_calib():
             viz_calib_processed(data_[0], data_[1], data_[2])
 
     
-        #sleep(sample_time_ + 0.002)
-        sleep(0.0005)
+        sleep(sample_time_)
 
 
 
 
 #processed_viz_calib()
-raw_viz_calib()
+#raw_viz_calib()
 
 
 

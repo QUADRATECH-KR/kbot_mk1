@@ -1,0 +1,9 @@
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/install/strip.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/install.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/list_install_components.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/rebuild_cache.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/edit_cache.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/test.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/install/local.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/kbot_uninstall.dir
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/CMakeFiles/uninstall.dir

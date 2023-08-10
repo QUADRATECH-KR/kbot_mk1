@@ -1,0 +1,1 @@
+/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot/ament_cmake_core/kbotConfig.cmake

@@ -1,0 +1,4 @@
+source;share/kbot/local_setup.bash
+source;share/kbot/local_setup.dsv
+source;share/kbot/local_setup.sh
+source;share/kbot/local_setup.zsh

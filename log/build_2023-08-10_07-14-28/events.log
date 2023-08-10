@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.000740] (kbot) JobQueued: {'identifier': 'kbot', 'dependencies': OrderedDict()}
+[0.000784] (kbot) JobStarted: {'identifier': 'kbot'}
+[0.099988] (-) TimerEvent: {}
+[0.125748] (kbot) JobProgress: {'identifier': 'kbot', 'progress': 'cmake'}
+[0.126566] (kbot) Command: {'cmd': ['/usr/bin/cmake', '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/src/kbot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot'], 'cwd': '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'linux-dev'), ('SSH_AGENT_PID', '1441'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/linux-dev'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1127'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=89a1916607d7d9f025bf2e2664d3f075'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'linux-dev'), ('JOURNAL_STREAM', '8:38722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'linux-dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/linux-dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/linuxdev-Desktop:@/tmp/.ICE-unix/1484,unix/linuxdev-Desktop:/tmp/.ICE-unix/1484'), ('INVOCATION_ID', '0a9a72a87a2a4111a30256e2b2c178a1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d24e2dfb_cb27_4be0_adcd_b7660f753bab'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.202'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=89a1916607d7d9f025bf2e2664d3f075'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.200405] (-) TimerEvent: {}
+[0.301443] (-) TimerEvent: {}
+[0.402096] (-) TimerEvent: {}
+[0.502981] (-) TimerEvent: {}
+[0.603237] (-) TimerEvent: {}
+[0.703655] (-) TimerEvent: {}
+[0.804243] (-) TimerEvent: {}
+[0.904846] (-) TimerEvent: {}
+[1.005369] (-) TimerEvent: {}
+[1.105610] (-) TimerEvent: {}
+[1.205993] (-) TimerEvent: {}
+[1.306629] (-) TimerEvent: {}
+[1.407278] (-) TimerEvent: {}
+[1.508090] (-) TimerEvent: {}
+[1.608337] (-) TimerEvent: {}
+[1.708735] (-) TimerEvent: {}
+[1.758178] (kbot) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.808958] (-) TimerEvent: {}
+[1.909674] (-) TimerEvent: {}
+[2.010311] (-) TimerEvent: {}
+[2.110664] (-) TimerEvent: {}
+[2.211031] (-) TimerEvent: {}
+[2.311750] (-) TimerEvent: {}
+[2.412638] (-) TimerEvent: {}
+[2.513470] (-) TimerEvent: {}
+[2.613790] (-) TimerEvent: {}
+[2.714406] (-) TimerEvent: {}
+[2.815192] (-) TimerEvent: {}
+[2.899096] (kbot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.915593] (-) TimerEvent: {}
+[2.999258] (kbot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[3.015800] (-) TimerEvent: {}
+[3.116569] (-) TimerEvent: {}
+[3.140492] (kbot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.154654] (kbot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.216672] (-) TimerEvent: {}
+[3.266568] (kbot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.295019] (kbot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.306515] (kbot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.316920] (-) TimerEvent: {}
+[3.355526] (kbot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.417117] (-) TimerEvent: {}
+[3.505660] (kbot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.506722] (kbot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.517227] (-) TimerEvent: {}
+[3.596084] (kbot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.607985] (kbot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.608452] (kbot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.617449] (-) TimerEvent: {}
+[3.653579] (kbot) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.717622] (-) TimerEvent: {}
+[3.818238] (-) TimerEvent: {}
+[3.878442] (kbot) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.878631] (kbot) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.918341] (-) TimerEvent: {}
+[4.018608] (-) TimerEvent: {}
+[4.118939] (-) TimerEvent: {}
+[4.123989] (kbot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.219144] (-) TimerEvent: {}
+[4.319751] (-) TimerEvent: {}
+[4.420602] (-) TimerEvent: {}
+[4.521194] (-) TimerEvent: {}
+[4.599632] (kbot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.621397] (-) TimerEvent: {}
+[4.721728] (-) TimerEvent: {}
+[4.822146] (-) TimerEvent: {}
+[4.922921] (-) TimerEvent: {}
+[5.023584] (-) TimerEvent: {}
+[5.123941] (-) TimerEvent: {}
+[5.140723] (kbot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.180968] (kbot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.194887] (kbot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.207953] (kbot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[5.224204] (-) TimerEvent: {}
+[5.236906] (kbot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.279224] (kbot) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.287192] (kbot) StdoutLine: {'line': b'-- Generating done\n'}
+[5.290194] (kbot) StdoutLine: {'line': b'-- Build files have been written to: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot\n'}
+[5.299795] (kbot) CommandEnded: {'returncode': 0}
+[5.301403] (kbot) JobProgress: {'identifier': 'kbot', 'progress': 'build'}
+[5.305488] (kbot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot', '--', '-j8', '-l8'], 'cwd': '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'linux-dev'), ('SSH_AGENT_PID', '1441'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/linux-dev'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1127'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=89a1916607d7d9f025bf2e2664d3f075'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'linux-dev'), ('JOURNAL_STREAM', '8:38722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'linux-dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/linux-dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/linuxdev-Desktop:@/tmp/.ICE-unix/1484,unix/linuxdev-Desktop:/tmp/.ICE-unix/1484'), ('INVOCATION_ID', '0a9a72a87a2a4111a30256e2b2c178a1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d24e2dfb_cb27_4be0_adcd_b7660f753bab'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.202'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=89a1916607d7d9f025bf2e2664d3f075'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.324336] (-) TimerEvent: {}
+[5.359080] (kbot) CommandEnded: {'returncode': 0}
+[5.382692] (kbot) JobProgress: {'identifier': 'kbot', 'progress': 'install'}
+[5.396414] (kbot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot'], 'cwd': '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'linux-dev'), ('SSH_AGENT_PID', '1441'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/linux-dev'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1127'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=89a1916607d7d9f025bf2e2664d3f075'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'linux-dev'), ('JOURNAL_STREAM', '8:38722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'linux-dev'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/linux-dev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/linuxdev-Desktop:@/tmp/.ICE-unix/1484,unix/linuxdev-Desktop:/tmp/.ICE-unix/1484'), ('INVOCATION_ID', '0a9a72a87a2a4111a30256e2b2c178a1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d24e2dfb_cb27_4be0_adcd_b7660f753bab'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.202'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=89a1916607d7d9f025bf2e2664d3f075'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[5.406334] (kbot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.406928] (kbot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.407366] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/pythonpath.sh\n'}
+[5.417970] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/pythonpath.dsv\n'}
+[5.424474] (-) TimerEvent: {}
+[5.428920] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/python3.8/site-packages/kbot/__init__.py\n'}
+[5.439931] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/kbot/kbot_rover.py\n'}
+[5.450942] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/joystick.yaml\n'}
+[5.461098] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/map_saver_params.yaml\n'}
+[5.469393] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/mapper_params_online_async.yaml\n'}
+[5.477506] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/nav2_params.yaml\n'}
+[5.485460] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/rplidar_params.yaml\n'}
+[5.493384] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/slam_localization.yaml\n'}
+[5.501923] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/inertia.xacro\n'}
+[5.509746] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/kbot_rover.xacro\n'}
+[5.518036] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/lidar.xacro\n'}
+[5.524600] (-) TimerEvent: {}
+[5.526124] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/robot.urdf.xacro\n'}
+[5.534216] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/inertia.xacro\n'}
+[5.542308] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/kbot_rover.xacro\n'}
+[5.550196] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/lidar.xacro\n'}
+[5.558714] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/robot.urdf.xacro\n'}
+[5.567077] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/joystick_launch.py\n'}
+[5.575028] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/kbot_rsp_launch.py\n'}
+[5.582904] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/localization_launch.py\n'}
+[5.591115] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/map_saver_launch.py\n'}
+[5.599083] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/navigation_launch.py\n'}
+[5.607058] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/rplidar_launch.py\n'}
+[5.615134] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/slam_launch.py\n'}
+[5.623456] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/worlds/empty.world\n'}
+[5.624699] (-) TimerEvent: {}
+[5.631377] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/worlds/obstacles.world\n'}
+[5.639954] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/meshes/chassis_LP.stl\n'}
+[5.648846] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/meshes/wheel_L_LP.stl\n'}
+[5.656887] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/meshes/wheel_R_LP.stl\n'}
+[5.665014] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/ament_index/resource_index/package_run_dependencies/kbot\n'}
+[5.673190] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/ament_index/resource_index/parent_prefix_path/kbot\n'}
+[5.681727] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/ament_prefix_path.sh\n'}
+[5.689928] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/ament_prefix_path.dsv\n'}
+[5.697880] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/path.sh\n'}
+[5.706547] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/path.dsv\n'}
+[5.715120] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.bash\n'}
+[5.723352] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.sh\n'}
+[5.724807] (-) TimerEvent: {}
+[5.731578] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.zsh\n'}
+[5.740341] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.dsv\n'}
+[5.748379] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/package.dsv\n'}
+[5.756630] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/ament_index/resource_index/packages/kbot\n'}
+[5.765019] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/cmake/kbotConfig.cmake\n'}
+[5.773343] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/cmake/kbotConfig-version.cmake\n'}
+[5.781496] (kbot) StdoutLine: {'line': b'-- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/package.xml\n'}
+[5.824940] (-) TimerEvent: {}
+[5.829023] (kbot) StdoutLine: {'line': b"Listing '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/python3.8/site-packages/kbot'...\n"}
+[5.829206] (kbot) StdoutLine: {'line': b"Compiling '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/python3.8/site-packages/kbot/__init__.py'...\n"}
+[5.835796] (kbot) CommandEnded: {'returncode': 0}
+[5.925102] (-) TimerEvent: {}
+[6.025614] (-) TimerEvent: {}
+[6.127059] (-) TimerEvent: {}
+[6.157673] (kbot) JobEnded: {'identifier': 'kbot', 'rc': 0}
+[6.158350] (-) EventReactorShutdown: {}

@@ -5,6 +5,8 @@ from threading import Thread
 from time import sleep
 
 
+tx_.IP   = '192.168.43.83'  #Raspberry Pi IP
+
 imu_.sample_time_ = 0.0083
 imu_.sample_rate_ = 1 / imu_.sample_time_
 

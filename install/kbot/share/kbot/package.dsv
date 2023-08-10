@@ -1,0 +1,11 @@
+source;share/kbot/hook/cmake_prefix_path.ps1
+source;share/kbot/hook/cmake_prefix_path.dsv
+source;share/kbot/hook/cmake_prefix_path.sh
+source;share/kbot/hook/pythonpath.ps1
+source;share/kbot/hook/pythonpath.dsv
+source;share/kbot/hook/pythonpath.sh
+source;share/kbot/local_setup.bash
+source;share/kbot/local_setup.dsv
+source;share/kbot/local_setup.ps1
+source;share/kbot/local_setup.sh
+source;share/kbot/local_setup.zsh

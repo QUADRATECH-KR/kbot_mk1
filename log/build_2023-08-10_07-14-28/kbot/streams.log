@@ -1,0 +1,82 @@
+[0.139s] Invoking command in '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/src/kbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot
+[1.758s] -- The C compiler identification is GNU 9.4.0
+[2.898s] -- The CXX compiler identification is GNU 9.4.0
+[2.999s] -- Check for working C compiler: /usr/bin/cc
+[3.140s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.154s] -- Detecting C compiler ABI info
+[3.266s] -- Detecting C compiler ABI info - done
+[3.294s] -- Detecting C compile features
+[3.306s] -- Detecting C compile features - done
+[3.355s] -- Check for working CXX compiler: /usr/bin/c++
+[3.505s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.506s] -- Detecting CXX compiler ABI info
+[3.595s] -- Detecting CXX compiler ABI info - done
+[3.607s] -- Detecting CXX compile features
+[3.608s] -- Detecting CXX compile features - done
+[3.653s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.878s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.878s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.123s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.599s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.140s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.181s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.194s] -- Added test 'lint_cmake' to check CMake code style
+[5.207s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[5.236s] -- Added test 'xmllint' to check XML markup files
+[5.279s] -- Configuring done
+[5.287s] -- Generating done
+[5.290s] -- Build files have been written to: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot
+[5.299s] Invoked command in '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/src/kbot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot
+[5.306s] Invoking command in '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot -- -j8 -l8
+[5.359s] Invoked command in '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot -- -j8 -l8
+[5.396s] Invoking command in '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot
+[5.406s] -- Install configuration: ""
+[5.406s] -- Execute custom install script
+[5.407s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/pythonpath.sh
+[5.417s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/pythonpath.dsv
+[5.428s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/python3.8/site-packages/kbot/__init__.py
+[5.439s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/kbot/kbot_rover.py
+[5.450s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/joystick.yaml
+[5.460s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/map_saver_params.yaml
+[5.469s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/mapper_params_online_async.yaml
+[5.477s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/nav2_params.yaml
+[5.485s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/rplidar_params.yaml
+[5.493s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/config/slam_localization.yaml
+[5.501s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/inertia.xacro
+[5.509s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/kbot_rover.xacro
+[5.517s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/lidar.xacro
+[5.525s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/bck/robot.urdf.xacro
+[5.534s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/inertia.xacro
+[5.542s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/kbot_rover.xacro
+[5.550s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/lidar.xacro
+[5.558s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/description/robot.urdf.xacro
+[5.566s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/joystick_launch.py
+[5.574s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/kbot_rsp_launch.py
+[5.582s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/localization_launch.py
+[5.590s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/map_saver_launch.py
+[5.598s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/navigation_launch.py
+[5.606s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/rplidar_launch.py
+[5.614s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/launch/slam_launch.py
+[5.623s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/worlds/empty.world
+[5.631s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/worlds/obstacles.world
+[5.639s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/meshes/chassis_LP.stl
+[5.648s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/meshes/wheel_L_LP.stl
+[5.656s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/meshes/wheel_R_LP.stl
+[5.664s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/ament_index/resource_index/package_run_dependencies/kbot
+[5.673s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/ament_index/resource_index/parent_prefix_path/kbot
+[5.681s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/ament_prefix_path.sh
+[5.689s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/ament_prefix_path.dsv
+[5.697s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/path.sh
+[5.706s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/environment/path.dsv
+[5.714s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.bash
+[5.723s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.sh
+[5.731s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.zsh
+[5.740s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/local_setup.dsv
+[5.748s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/package.dsv
+[5.756s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/ament_index/resource_index/packages/kbot
+[5.764s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/cmake/kbotConfig.cmake
+[5.773s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/cmake/kbotConfig-version.cmake
+[5.781s] -- Symlinking: /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/share/kbot/package.xml
+[5.828s] Listing '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/python3.8/site-packages/kbot'...
+[5.828s] Compiling '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/install/kbot/lib/python3.8/site-packages/kbot/__init__.py'...
+[5.835s] Invoked command in '/home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/linux-dev/Desktop/nav final/KBOT_NEW/GIT/kbot_mk1/build/kbot
